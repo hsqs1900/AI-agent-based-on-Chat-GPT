@@ -1,0 +1,1392 @@
+25-09-01.16:51:41.807 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 13846 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.16:51:41.808 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.16:51:42.332 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.16:51:42.337 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.16:51:42.337 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.16:51:42.337 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.16:51:42.359 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.16:51:42.359 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 540 ms
+25-09-01.16:51:42.740 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.16:51:42.741 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.16:51:42.741 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.16:51:42.836 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.16:51:42.937 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.16:51:42.940 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.16:51:42.944 [main            ] INFO  Application            - Started Application in 1.325 seconds (process running for 1.611)
+25-09-01.16:51:42.944 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.16:51:42.944 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.945 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.945 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.946 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.946 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.946 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.946 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.16:51:42.953 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.16:51:43.034 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@40a70c56
+25-09-01.16:51:43.035 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.16:51:43.113 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.16:51:43.113 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.16:51:43.114 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.16:51:43.114 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.16:51:43.470 [HttpClient-10-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.16:51:43.548 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.16:51:43.549 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.16:51:43.549 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.16:51:43.646 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.16:51:43.646 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.16:51:43.651 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.16:51:43.651 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.16:51:43.792 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.16:51:43.858 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.16:51:43.925 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.16:51:43.925 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.16:53:21.160 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-01.16:53:21.161 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-01.16:53:21.163 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-09-01.16:53:21.196 [http-nio-8091-exec-2] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"检索小傅哥的相关项目，列出一份学习计划","sessionId":"session_1756716801108_qnr5r4xs7"}
+25-09-01.16:53:21.198 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.16:53:21.198 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 检索小傅哥的相关项目，列出一份学习计划
+25-09-01.16:53:21.198 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-01.16:53:21.198 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756716801108_qnr5r4xs7
+25-09-01.16:53:21.202 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.16:53:21.202 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.16:53:21.465 [pool-2-thread-7 ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090116532375736918436950331)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.16:53:21.466 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090116532375736918436950331)","type":"one_api_error"}}
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090116532375736918436950331)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.17:37:53.402 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.17:37:53.404 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.17:37:53.408 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.17:37:53.413 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.17:37:58.573 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 17077 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.17:37:58.574 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.17:37:59.115 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.17:37:59.119 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.17:37:59.120 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.17:37:59.120 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.17:37:59.142 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.17:37:59.142 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 556 ms
+25-09-01.17:37:59.506 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.17:37:59.508 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.17:37:59.508 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.17:37:59.584 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.17:37:59.689 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.17:37:59.692 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.17:37:59.696 [main            ] INFO  Application            - Started Application in 1.329 seconds (process running for 1.694)
+25-09-01.17:37:59.697 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.17:37:59.697 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.698 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.698 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.698 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.698 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.698 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.698 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.17:37:59.704 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.17:37:59.786 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c16f4b3
+25-09-01.17:37:59.787 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.17:37:59.866 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:37:59.867 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:37:59.867 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.17:37:59.867 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:38:00.516 [HttpClient-10-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.17:38:00.610 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.17:38:00.611 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.17:38:00.612 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:38:00.689 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.17:38:00.690 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:38:00.694 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.17:38:00.694 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:38:00.764 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.17:38:00.861 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.17:38:01.013 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.17:38:01.013 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.17:38:01.013 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.17:38:17.395 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-01.17:38:17.395 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-01.17:38:17.396 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-01.17:38:17.425 [http-nio-8091-exec-2] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"检索小傅哥的相关项目，列出一份学习计划","sessionId":"session_1756719497346_4rlovs1v9"}
+25-09-01.17:38:17.426 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.17:38:17.426 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 检索小傅哥的相关项目，列出一份学习计划
+25-09-01.17:38:17.426 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-01.17:38:17.426 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756719497346_4rlovs1v9
+25-09-01.17:38:17.430 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.17:38:17.430 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.17:38:17.919 [pool-2-thread-7 ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090117382024293287847136822)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.17:38:17.920 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090117382024293287847136822)","type":"one_api_error"}}
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090117382024293287847136822)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.17:41:12.530 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.17:41:12.535 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.17:41:12.539 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.17:41:12.545 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.17:41:18.368 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 17331 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.17:41:18.369 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.17:41:18.882 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.17:41:18.887 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.17:41:18.888 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.17:41:18.888 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.17:41:18.910 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.17:41:18.910 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 531 ms
+25-09-01.17:41:19.254 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.17:41:19.256 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.17:41:19.256 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.17:41:19.336 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.17:41:19.441 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.17:41:19.446 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.17:41:19.450 [main            ] INFO  Application            - Started Application in 1.262 seconds (process running for 1.66)
+25-09-01.17:41:19.451 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.17:41:19.451 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.452 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.452 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.452 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.452 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.452 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.452 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.17:41:19.460 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.17:41:19.528 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5240b3de
+25-09-01.17:41:19.528 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.17:41:19.603 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:41:19.603 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:41:19.604 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.17:41:19.604 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:41:20.269 [HttpClient-10-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.17:41:20.428 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.17:41:20.431 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.17:41:20.431 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:41:20.535 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.17:41:20.535 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:41:20.541 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.17:41:20.541 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.17:41:20.644 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.17:41:20.768 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.17:41:20.878 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.17:41:20.878 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.17:41:20.878 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.17:41:27.479 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-01.17:41:27.479 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-01.17:41:27.479 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-09-01.17:41:27.505 [http-nio-8091-exec-1] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"检索小傅哥的相关项目，列出一份学习计划","sessionId":"session_1756719687436_yn6bcqfi9"}
+25-09-01.17:41:27.506 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.17:41:27.506 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 检索小傅哥的相关项目，列出一份学习计划
+25-09-01.17:41:27.506 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-01.17:41:27.506 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756719687436_yn6bcqfi9
+25-09-01.17:41:27.509 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.17:41:27.509 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.17:41:27.851 [pool-2-thread-7 ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090117413013618432867360753)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.17:41:27.853 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090117413013618432867360753)","type":"one_api_error"}}
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090117413013618432867360753)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.18:07:55.178 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=17m35s476ms).
+25-09-01.18:23:53.706 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=15m28s353ms).
+25-09-01.18:40:35.751 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=16m12s43ms).
+25-09-01.18:47:14.492 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=6m8s730ms).
+25-09-01.18:48:53.603 [http-nio-8091-exec-4] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"1+1","sessionId":"session_1756723733586_scjbrrkb9"}
+25-09-01.18:48:53.604 [pool-2-thread-8 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.18:48:53.604 [pool-2-thread-8 ] INFO  RootNode               - 用户输入: 1+1
+25-09-01.18:48:53.604 [pool-2-thread-8 ] INFO  RootNode               - 最大执行步数: 5
+25-09-01.18:48:53.604 [pool-2-thread-8 ] INFO  RootNode               - 会话ID: session_1756723733586_scjbrrkb9
+25-09-01.18:48:53.641 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.18:48:53.641 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.18:48:53.809 [pool-2-thread-8 ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090118485591321238890933560)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.18:48:53.811 [pool-2-thread-8 ] ERROR AiAgentController      - AutoAgent执行异常：401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090118485591321238890933560)","type":"one_api_error"}}
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌状态不可用 (request id: 2025090118485591321238890933560)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.19:44:13.535 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.19:44:13.543 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.19:44:13.548 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.19:44:13.555 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.19:44:17.505 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 22742 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.19:44:17.505 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.19:44:18.071 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.19:44:18.077 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.19:44:18.077 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.19:44:18.077 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.19:44:18.103 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.19:44:18.103 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 583 ms
+25-09-01.19:44:18.487 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.19:44:18.489 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.19:44:18.489 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.19:44:18.574 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.19:44:18.690 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.19:44:18.694 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.19:44:18.698 [main            ] INFO  Application            - Started Application in 1.394 seconds (process running for 1.655)
+25-09-01.19:44:18.699 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.19:44:18.699 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.700 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.700 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.700 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.700 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.700 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.701 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.19:44:18.708 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.19:44:18.785 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3841de14
+25-09-01.19:44:18.785 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.19:44:18.902 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.19:44:18.904 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.19:44:18.918 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.19:44:18.918 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.19:44:19.317 [HttpClient-10-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.19:44:19.406 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.19:44:19.408 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.19:44:19.408 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.19:44:19.515 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.19:44:19.515 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.19:44:19.520 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.19:44:19.520 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.19:44:19.669 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.19:44:19.773 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.19:44:19.860 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.19:44:19.861 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.19:44:19.861 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.20:44:19.195 [HttpClient-10-Worker-2] ERROR HttpClientSseClientTransport - SSE connection error
+java.io.IOException: chunked transfer encoding, state: READING_LENGTH
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:351)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.EOFException: EOF reached while reading
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:596)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:640)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:845)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+25-09-01.20:44:19.202 [ForkJoinPool.commonPool-worker-2] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.io.IOException: chunked transfer encoding, state: READING_LENGTH
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:874)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers.lambda$getBodyAsync$2(ResponseSubscribers.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.loop(LineSubscriberAdapter.java:410)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.signalError(LineSubscriberAdapter.java:199)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter.onError(LineSubscriberAdapter.java:105)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.propagateError(Http1Response.java:327)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.complete(Http1Response.java:356)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.onError(Http1Response.java:386)
+	at java.net.http/jdk.internal.net.http.Http1Response.lambda$readBody$2(Http1Response.java:468)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Response.onReadError(Http1Response.java:554)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:761)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: chunked transfer encoding, state: READING_LENGTH
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:351)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	... 8 common frames omitted
+Caused by: java.io.EOFException: EOF reached while reading
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:596)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:640)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:845)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+25-09-01.21:00:32.628 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.21:00:32.635 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.21:00:32.639 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.21:00:32.649 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.21:01:42.969 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 28116 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.21:01:42.970 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.21:01:43.528 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.21:01:43.536 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.21:01:43.536 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.21:01:43.536 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.21:01:43.559 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.21:01:43.559 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 575 ms
+25-09-01.21:01:43.959 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.21:01:43.960 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.21:01:43.960 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.21:01:44.057 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.21:01:44.165 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.21:01:44.170 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.21:01:44.175 [main            ] INFO  Application            - Started Application in 1.407 seconds (process running for 1.656)
+25-09-01.21:01:44.176 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.21:01:44.176 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.177 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.177 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.178 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.178 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.178 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.178 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.21:01:44.186 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.21:01:44.262 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@71deac49
+25-09-01.21:01:44.262 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.21:01:44.353 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:01:44.353 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:01:44.354 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.21:01:44.354 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:01:54.384 [main            ] ERROR AiAgentAutoConfiguration - AI Agent 自动装配失败
+io.modelcontextprotocol.spec.McpError: Failed to wait for the message endpoint
+	at io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.sendMessage(HttpClientSseClientTransport.java:403)
+	at io.modelcontextprotocol.spec.McpClientSession.lambda$sendRequest$9(McpClientSession.java:237)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:61)
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.Mono.block(Mono.java:1778)
+	at io.modelcontextprotocol.client.McpSyncClient.initialize(McpSyncClient.java:171)
+	at cn.bugstack.ai.domain.agent.service.armory.AiClientToolMcpNode.createMcpSyncClient(AiClientToolMcpNode.java:101)
+	at cn.bugstack.ai.domain.agent.service.armory.AiClientToolMcpNode.doApply(AiClientToolMcpNode.java:49)
+	at cn.bugstack.ai.domain.agent.service.armory.AiClientToolMcpNode.doApply(AiClientToolMcpNode.java:29)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.armory.AiClientApiNode.doApply(AiClientApiNode.java:53)
+	at cn.bugstack.ai.domain.agent.service.armory.AiClientApiNode.doApply(AiClientApiNode.java:22)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.armory.RootNode.doApply(RootNode.java:44)
+	at cn.bugstack.ai.domain.agent.service.armory.RootNode.doApply(RootNode.java:21)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.config.AiAgentAutoConfiguration.onApplicationEvent(AiAgentAutoConfiguration.java:93)
+	at cn.bugstack.ai.config.AiAgentAutoConfiguration.onApplicationEvent(AiAgentAutoConfiguration.java:28)
+	at cn.bugstack.ai.config.AiAgentAutoConfiguration$$SpringCGLIB$$0.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.boot.context.event.EventPublishingRunListener.ready(EventPublishingRunListener.java:109)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$ready$6(SpringApplicationRunListeners.java:80)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.ready(SpringApplicationRunListeners.java:80)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.bugstack.ai.Application.main(Application.java:12)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		... 31 common frames omitted
+25-09-01.21:02:44.543 [ForkJoinPool.commonPool-worker-1] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to connect to SSE stream. Unexpected status code: 500
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: java.lang.RuntimeException: Failed to connect to SSE stream. Unexpected status code: 500
+	at io.modelcontextprotocol.client.transport.FlowSseClient.lambda$subscribe$2(FlowSseClient.java:202)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	... 9 common frames omitted
+25-09-01.21:02:44.543 [ForkJoinPool.commonPool-worker-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to connect to SSE stream. Unexpected status code: 500
+Caused by: java.lang.RuntimeException: Failed to connect to SSE stream. Unexpected status code: 500
+	at io.modelcontextprotocol.client.transport.FlowSseClient.lambda$subscribe$2(FlowSseClient.java:202)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+25-09-01.21:05:14.956 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.21:05:14.959 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.21:05:14.962 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.21:05:14.968 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.21:05:21.607 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 28404 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.21:05:21.608 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.21:05:22.113 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.21:05:22.118 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.21:05:22.119 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.21:05:22.119 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.21:05:22.139 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.21:05:22.139 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 518 ms
+25-09-01.21:05:22.481 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.21:05:22.483 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.21:05:22.483 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.21:05:22.568 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.21:05:22.665 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.21:05:22.668 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.21:05:22.672 [main            ] INFO  Application            - Started Application in 1.24 seconds (process running for 1.458)
+25-09-01.21:05:22.673 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.21:05:22.673 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.674 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.674 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.674 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.674 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.674 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.674 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.21:05:22.680 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.21:05:22.748 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@554bfca9
+25-09-01.21:05:22.749 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.21:05:22.822 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:05:22.822 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:05:22.822 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.21:05:22.823 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:05:23.150 [HttpClient-10-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.21:05:23.234 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.21:05:23.235 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.21:05:23.235 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:05:23.331 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.21:05:23.331 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:05:23.336 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.21:05:23.336 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:05:23.479 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.21:05:23.548 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.21:05:23.646 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.21:05:23.646 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.21:05:23.646 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.21:08:54.202 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-01.21:08:54.202 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-01.21:08:54.207 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 5 ms
+25-09-01.21:08:54.242 [http-nio-8091-exec-2] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"检索小傅哥的相关项目，列出一份学习计划","sessionId":"session_1756732134125_edcxc2hru"}
+25-09-01.21:08:54.244 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.21:08:54.244 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 检索小傅哥的相关项目，列出一份学习计划
+25-09-01.21:08:54.244 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-01.21:08:54.244 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756732134125_edcxc2hru
+25-09-01.21:08:54.251 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.21:08:54.252 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.21:08:54.499 [pool-2-thread-7 ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090121085668384607123698866)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:61)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.21:08:54.500 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090121085668384607123698866)","type":"one_api_error"}}
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090121085668384607123698866)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:61)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.21:15:38.968 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.21:15:38.970 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.21:15:38.974 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.21:15:38.980 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.21:15:41.886 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 29084 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.21:15:41.887 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.21:15:42.412 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.21:15:42.417 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.21:15:42.417 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.21:15:42.417 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.21:15:42.439 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.21:15:42.439 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 534 ms
+25-09-01.21:15:42.783 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.21:15:42.785 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.21:15:42.785 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.21:15:42.862 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.21:15:42.962 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.21:15:42.965 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.21:15:42.969 [main            ] INFO  Application            - Started Application in 1.261 seconds (process running for 1.487)
+25-09-01.21:15:42.970 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.21:15:42.970 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.971 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.971 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.971 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.971 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.972 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.972 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.21:15:42.980 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.21:15:43.054 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@703601fd
+25-09-01.21:15:43.055 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.21:15:43.127 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:15:43.127 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:15:43.128 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.21:15:43.128 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:15:44.514 [HttpClient-10-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.21:15:44.590 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.21:15:44.593 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.21:15:44.593 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:15:44.696 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.21:15:44.696 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:15:44.705 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.21:15:44.705 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:15:44.849 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.21:15:44.909 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.21:15:44.979 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.21:15:44.979 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.21:15:44.979 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.21:17:21.102 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.21:17:21.104 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.21:17:21.107 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.21:17:21.111 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.21:17:24.331 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 29226 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.21:17:24.332 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.21:17:24.851 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.21:17:24.856 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.21:17:24.856 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.21:17:24.856 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.21:17:24.880 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.21:17:24.880 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 535 ms
+25-09-01.21:17:25.227 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.21:17:25.229 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.21:17:25.229 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.21:17:25.314 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.21:17:25.428 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.21:17:25.432 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.21:17:25.436 [main            ] INFO  Application            - Started Application in 1.303 seconds (process running for 1.564)
+25-09-01.21:17:25.437 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.21:17:25.438 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.439 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.439 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.439 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.439 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.439 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.439 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.21:17:25.446 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.21:17:25.518 [pool-2-thread-2 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5053239d
+25-09-01.21:17:25.518 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.21:17:25.592 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:17:25.593 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:17:25.594 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.21:17:25.594 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:17:25.882 [HttpClient-10-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.21:17:26.056 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.21:17:26.057 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.21:17:26.057 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:17:26.156 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.21:17:26.156 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:17:26.161 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.21:17:26.161 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:17:26.249 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.21:17:26.347 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.21:17:26.493 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.21:17:26.494 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.21:17:26.494 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.21:17:35.957 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-01.21:17:35.957 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-01.21:17:35.958 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-09-01.21:17:35.984 [http-nio-8091-exec-1] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"1+1","sessionId":"session_1756732655906_hr5kdilja"}
+25-09-01.21:17:35.986 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.21:17:35.986 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 1+1
+25-09-01.21:17:35.986 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-01.21:17:35.986 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756732655906_hr5kdilja
+25-09-01.21:17:35.988 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.21:17:35.988 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.21:17:36.182 [pool-2-thread-7 ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090121173836759661821464886)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:61)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.21:17:36.183 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090121173836759661821464886)","type":"one_api_error"}}
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌额度已用尽 (request id: 2025090121173836759661821464886)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:69)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:57)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:20)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:61)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-01.21:23:31.817 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-01.21:23:31.819 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-01.21:23:31.821 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-01.21:23:31.827 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-01.21:26:06.099 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 30450 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-01.21:26:06.100 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-01.21:26:06.646 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-01.21:26:06.651 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-01.21:26:06.651 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-01.21:26:06.651 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-01.21:26:06.674 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-01.21:26:06.674 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 545 ms
+25-09-01.21:26:07.036 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-01.21:26:07.038 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-01.21:26:07.038 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-01.21:26:07.114 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-01.21:26:07.217 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-01.21:26:07.220 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-01.21:26:07.224 [main            ] INFO  Application            - Started Application in 1.352 seconds (process running for 1.65)
+25-09-01.21:26:07.225 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-01.21:26:07.225 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.226 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.226 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.226 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.226 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.226 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.226 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-01.21:26:07.233 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-01.21:26:07.302 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@313ac8c0
+25-09-01.21:26:07.303 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-01.21:26:07.390 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:26:07.390 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:26:07.391 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-01.21:26:07.391 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:26:07.745 [HttpClient-10-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-01.21:26:07.848 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-01.21:26:07.849 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-01.21:26:07.849 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:26:07.963 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-01.21:26:07.963 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:26:07.970 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-01.21:26:07.970 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-01.21:26:08.054 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-01.21:26:08.137 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-01.21:26:08.290 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-01.21:26:08.290 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-01.21:26:08.290 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-01.21:26:20.916 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-01.21:26:20.916 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-01.21:26:20.917 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-01.21:26:20.945 [http-nio-8091-exec-1] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":3,"message":"检索小傅哥的相关项目，列出一份学习计划","sessionId":"session_1756733180846_qlz9kkcbd"}
+25-09-01.21:26:20.947 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-01.21:26:20.947 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 检索小傅哥的相关项目，列出一份学习计划
+25-09-01.21:26:20.947 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 3
+25-09-01.21:26:20.947 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756733180846_qlz9kkcbd
+25-09-01.21:26:20.950 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-01.21:26:20.950 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-01.21:26:26.217 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+25-09-01.21:26:26.217 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+25-09-01.21:26:26.217 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 当前任务为检索“小傅哥”的相关项目，并基于这些项目制定一份学习计划。目前处于首次执行阶段，尚未开始检索和信息整理。用户需求实质上包括两部分内容：(1) 确定“小傅哥”的相关项目资源；(2) 结合项目内容，设计针对性的学习计划。任务尚无具体进展，所需信息未知，尚未进行搜索或内容生成。
+25-09-01.21:26:26.222 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+25-09-01.21:26:26.222 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📊 当前暂无执行历史，无已完成步骤或成果，无法进行评估。
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 1. 使用搜索工具对“小傅哥 相关项目”进行精准网络检索，获取小傅哥发布的开源项目、教程、文章或课程资源。
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 2. 综合搜索结果，筛选出主要且具有代表性的项目与学习资源。
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 3. 根据筛选出的项目技术栈及难度，制定分阶段学习计划（如基础知识、核心项目实战、进阶拓展等）。
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 4. 生成并输出包含项目列表与对应学习步骤的结构化计划，满足用户需求。
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 具体步骤优先调用search功能，关键词建议为“小傅哥 开源项目 学习计划”。完成信息汇总后，结合专业知识拟定学习路径。
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 完成度评估: 10%
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🔄 任务状态: 继续执行
+25-09-01.21:26:26.223 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+⚡ 阶段2: 精准任务执行
+25-09-01.21:27:01.095 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+⚡ === 第 1 步执行结果 ===
+25-09-01.21:27:01.095 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🎯 执行目标:
+25-09-01.21:27:01.095 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🔧 执行过程:
+25-09-01.21:27:01.095 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 1. 使用关键词“小傅哥 开源项目 学习计划”调用搜索工具进行网络检索。
+25-09-01.21:27:01.095 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 2. 利用ERNIE-3.5-8K模型对搜索结果进行智能总结，归纳出小傅哥的开源项目、技术栈、学习资源以及学习路线规划。
+25-09-01.21:27:01.095 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 3. 根据搜索总结内容，整理出结构化的学习计划，包括项目介绍、技术要求及阶段性学习目标。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+📈 执行结果:
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 ### 小傅哥开源项目及学习计划总结
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 #### 一、小傅哥主要开源项目
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 1. **《ChatGPT AI问答助手》**
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 简介：智能问答系统，帮助解决技术问题，提高回复效率。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 技术栈：Java、深度学习、爬虫接口、DDD架构、Docker、GitHub。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 学习资源：配套视频课程，手写代码讲解。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 2. **《OpenAI代码自动评审》**
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 简介：自动化代码评审组件，支持GitHub Actions、微信通知。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 技术栈：GitHub Actions、Maven、OpenAI ChatGLM、微信公众号API。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 学习资源：全程视频教程，覆盖项目设计、构建和测试。
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 #### 二、学习路线规划
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 1. **基础准备**
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - Java语言基础
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - Git和GitHub使用
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 2. **深入技术栈**
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 深度学习基础
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - Docker容器技术
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - Maven项目构建工具
+25-09-01.21:27:01.096 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 3. **项目实战**
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 《ChatGPT AI问答助手》：逐步代码手写，理解项目结构，尝试功能扩展。
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 《OpenAI代码自动评审》：从创建到集成测试，掌握自动评审和微信通知实现。
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 4. **总结提升**
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 撰写学习笔记
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 加入小傅哥星球“码农会锁”交流，获取更多资源。
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 #### 三、学习资源推荐
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 小傅哥博客：https://bugstack.cn
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 视频课程（配合两个开源项目）
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - 小傅哥星球“码农会锁”会员资源
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🔍 质量检查:
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ - 搜索关键词精准，结果涵盖技术栈全面，项目案例具体，满足用户对“小傅哥相关项目”和“学习计划”的需求。
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ - 计划内容结构清晰，阶段明确，兼顾基础与实战，便于执行和学习。
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ - 提供了官方博客及视频课程作为权威学习资源，确保信息准确可行。
+25-09-01.21:27:01.097 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ 整体评价：执行结果准确详实，完全符合用户需求和分析师策略，质量高且具有操作性。
+25-09-01.21:27:01.098 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔍 阶段3: 质量监督检查
+25-09-01.21:27:08.828 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔍 === 第 1 步监督结果 ===
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 需求匹配度:
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 执行结果直接检索并总结了“小傅哥”的主要相关项目，列出了两个具体的开源项目，并基于这些项目制定了分阶段、结构清晰的学习计划，内容涵盖技术栈、项目介绍、学习步骤和推荐资源，完全回应了用户的原始需求。
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 内容完整性:
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 内容较为完整，涵盖项目简介、技术栈、学习资源、学习路线规划四个方面，具体且实用，兼顾了基础知识和实战应用，还推荐了官方博客及会员资源，便于用户深入学习。
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+⚠️ 问题识别:
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ - 学习计划虽然明确，但未给出具体的时间规划，如每阶段建议学习时长或详细任务分解，略显粗略。
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ - 项目数量较少，仅列举了两个代表项目，若能更多项目供选择，更能符合“相关项目”需求的广度。
+25-09-01.21:27:08.829 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ - 学习资源未直接列出具体课程名称或链接，依赖用户自己去官网和会员区查找，降低了可用性。
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+💡 改进建议:
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 增加具体时间节点或学习周期建议，提升学习计划的可执行性。
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 扩展项目列表，涵盖更多小傅哥的相关项目，更丰富选择面。
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 补充学习资源具体链接或课程名称，方便用户快速获取资料，提升实用性。
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 可加入项目实战中的关键技术点和难点解析，引导学习重点。
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+📊 质量评分: 8分
+25-09-01.21:27:08.830 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+✅ 检查结果: 通过
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - ✅ 质量检查通过
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 执行第 2 步 ===
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 阶段4: 执行总结分析
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 动态多轮执行总结 ====
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📈 总执行步数: 2 步
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - ✅ 任务完成状态: 已完成
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📊 执行效率: 100.0%
+25-09-01.21:27:08.831 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+--- 生成已完成任务的最终答案 ---
+25-09-01.21:27:17.217 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📋 === 已完成任务最终总结报告 ===
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 ### 小傅哥相关项目及学习计划
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 #### 一、小傅哥主要相关开源项目
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 1. **《ChatGPT AI问答助手》**
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 简介：基于深度学习与爬虫接口的智能问答系统，提升技术问题的解决效率。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 技术栈：Java、深度学习、爬虫接口、DDD架构、Docker、GitHub。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 学习资源：配套视频课程，手写代码讲解。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 2. **《OpenAI代码自动评审》**
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 简介：自动化代码评审工具，支持GitHub Actions自动触发及微信通知。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 技术栈：GitHub Actions、Maven、OpenAI ChatGLM、微信公众号API。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 学习资源：全程视频教程，涵盖项目设计、构建与测试。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 #### 二、学习计划路线
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 1. **基础准备阶段**
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 掌握Java语言基础
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 熟练使用Git和GitHub进行版本管理
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 2. **技术深入阶段**
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 学习深度学习基础知识
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 掌握Docker容器技术
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 熟悉Maven项目构建与管理
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 3. **项目实战阶段**
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 《ChatGPT AI问答助手》项目：
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 逐步手写代码，理解项目整体架构，尝试功能开发与扩展。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 《OpenAI代码自动评审》项目：
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 从项目创建到自动化集成测试，掌握代码评审自动化和微信通知实现流程。
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 4. **总结提升阶段**
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 撰写学习笔记，归纳总结技术难点与解决方案
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 加入小傅哥星球“码农会锁”会员，参与社区交流，获取更多学习资源和实战经验
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 💡 #### 三、推荐学习资源
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - **小傅哥博客**：[https://bugstack.cn](https://bugstack.cn)
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 两个开源项目的配套视频课程（可在博客或会员区获取）
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - 小傅哥星球“码农会锁”会员资源（技术分享与项目支持）
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 ---
+25-09-01.21:27:17.218 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 这份学习计划涵盖了相关项目介绍、技术栈准备、实战操作和社群交流，适合系统、有步骤地学习和掌握小傅哥的代表项目及相关技术。
+25-09-01.21:27:17.219 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - ✅ 已发送完成标识
+25-09-01.21:27:17.219 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+🏁 === 动态多轮执行结束 ====
+25-09-01.21:27:17.219 [pool-2-thread-7 ] INFO  AutoAgentExecuteStrategy - 测试结果:ai agent execution summary completed!
+25-09-01.21:33:22.623 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=45s173ms).
+25-09-01.21:40:19.196 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=6m56s574ms).
+25-09-01.23:02:04.592 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h21m45s396ms).

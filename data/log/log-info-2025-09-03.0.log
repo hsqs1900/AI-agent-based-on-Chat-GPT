@@ -1,0 +1,10 @@
+25-09-03.00:03:21.556 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=9m56s858ms).
+25-09-03.00:16:21.192 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=2m59s567ms).
+25-09-03.01:09:26.745 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=50m35s530ms).
+25-09-03.01:21:45.518 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=7m48s717ms).
+25-09-03.01:56:08.204 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1m46s274ms).
+25-09-03.02:05:53.608 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=3m15s355ms).
+25-09-03.02:14:25.980 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-03.02:14:27.994 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-03.02:14:28.010 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-03.02:14:28.019 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.

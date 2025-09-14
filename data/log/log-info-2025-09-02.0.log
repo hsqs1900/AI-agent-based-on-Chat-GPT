@@ -1,0 +1,593 @@
+25-09-02.00:26:10.630 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h24m6s38ms).
+25-09-02.00:53:19.832 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=27m9s202ms).
+25-09-02.01:36:29.924 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=43m10s92ms).
+25-09-02.03:11:59.526 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h35m29s602ms).
+25-09-02.04:28:23.508 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h16m23s982ms).
+25-09-02.05:49:35.696 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h21m12s188ms).
+25-09-02.07:00:55.536 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h11m19s839ms).
+25-09-02.08:28:09.346 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h27m13s811ms).
+25-09-02.09:29:17.341 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h1m7s995ms).
+25-09-02.10:45:07.096 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h15m49s755ms).
+25-09-02.10:49:46.769 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=4m39s672ms).
+25-09-02.12:07:24.306 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=15m36s951ms).
+25-09-02.12:23:10.014 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=15m45s708ms).
+25-09-02.12:39:10.585 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=15m30s563ms).
+25-09-02.12:41:30.075 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=2m19s490ms).
+25-09-02.12:58:31.839 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=16m31s761ms).
+25-09-02.13:14:43.946 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=15m42s94ms).
+25-09-02.13:15:38.851 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=54s904ms).
+25-09-02.13:34:57.329 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=17m18s454ms).
+25-09-02.13:52:34.809 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=17m7s466ms).
+25-09-02.14:10:24.030 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=17m19s214ms).
+25-09-02.14:12:47.591 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=2m23s561ms).
+25-09-02.18:56:26.730 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=13m6s957ms).
+25-09-02.19:25:17.095 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-02.19:25:17.099 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-02.19:25:17.107 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-02.19:25:17.118 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-02.19:25:42.221 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 67267 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-02.19:25:42.222 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-02.19:25:42.760 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8099 (http)
+25-09-02.19:25:42.764 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8099"]
+25-09-02.19:25:42.765 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-02.19:25:42.765 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-02.19:25:42.789 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-02.19:25:42.789 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 553 ms
+25-09-02.19:25:43.167 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-02.19:25:43.169 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-02.19:25:43.169 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-02.19:25:43.249 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-02.19:25:43.353 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8099"]
+25-09-02.19:25:43.357 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8099 (http) with context path '/'
+25-09-02.19:25:43.361 [main            ] INFO  Application            - Started Application in 1.33 seconds (process running for 1.596)
+25-09-02.19:25:43.361 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104])
+25-09-02.19:25:43.361 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.362 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.362 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.362 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.363 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.363 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.363 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:25:43.369 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:25:48.506 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:25:48.512 [main            ] ERROR AiAgentAutoConfiguration - AI Agent 自动装配失败
+java.util.concurrent.CompletionException: org.mybatis.spring.MyBatisSystemException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes/mybatis/mapper/ai_client_config_mapper.xml]
+### The error may involve cn.bugstack.ai.infrastructure.dao.IAiClientConfigDao.queryBySourceTypeAndId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.mybatis.spring.MyBatisSystemException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes/mybatis/mapper/ai_client_config_mapper.xml]
+### The error may involve cn.bugstack.ai.infrastructure.dao.IAiClientConfigDao.queryBySourceTypeAndId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:99)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy78.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:194)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy84.queryBySourceTypeAndId(Unknown Source)
+	at cn.bugstack.ai.infrastructure.adapter.repository.AgentRepository.queryAiClientApiVOListByClientIds(AgentRepository.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at cn.bugstack.ai.infrastructure.adapter.repository.AgentRepository$$SpringCGLIB$$0.queryAiClientApiVOListByClientIds(<generated>)
+	at cn.bugstack.ai.domain.agent.service.armory.business.data.impl.AiClientLoadDataStrategy.lambda$loadData$0(AiClientLoadDataStrategy.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes/mybatis/mapper/ai_client_config_mapper.xml]
+### The error may involve cn.bugstack.ai.infrastructure.dao.IAiClientConfigDao.queryBySourceTypeAndId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 24 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 31 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:899)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:787)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:709)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:677)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:137)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:470)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:211)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1369)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:843)
+	... 55 common frames omitted
+25-09-02.19:25:53.576 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:25:58.644 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:26:03.703 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:26:08.764 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:28:37.066 [http-nio-8099-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-02.19:28:37.066 [http-nio-8099-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-02.19:28:37.068 [http-nio-8099-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-09-02.19:28:37.173 [http-nio-8099-exec-2] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"4","maxStep":5,"message":"通过ES查询被限流的用户，给出被限流用户列表。","sessionId":"session_1756812517003_n336eyz3o"}
+25-09-02.19:28:37.175 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-02.19:28:37.175 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 通过ES查询被限流的用户，给出被限流用户列表。
+25-09-02.19:28:37.175 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-02.19:28:37.175 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756812517003_n336eyz3o
+25-09-02.19:28:37.176 [pool-2-thread-7 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:28:42.236 [pool-2-thread-7 ] ERROR AgentRepository        - Query ai agent client flow config failed, aiAgentId: 4
+org.mybatis.spring.MyBatisSystemException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes/mybatis/mapper/ai_agent_flow_config_mapper.xml]
+### The error may involve cn.bugstack.ai.infrastructure.dao.IAiAgentFlowConfigDao.queryByAgentId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:99)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy78.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:194)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.queryByAgentId(Unknown Source)
+	at cn.bugstack.ai.infrastructure.adapter.repository.AgentRepository.queryAiAgentClientFlowConfig(AgentRepository.java:507)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at cn.bugstack.ai.infrastructure.adapter.repository.AgentRepository$$SpringCGLIB$$0.queryAiAgentClientFlowConfig(<generated>)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:33)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes/mybatis/mapper/ai_agent_flow_config_mapper.xml]
+### The error may involve cn.bugstack.ai.infrastructure.dao.IAiAgentFlowConfigDao.queryByAgentId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 27 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 34 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:899)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 44 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at jdk.internal.reflect.GeneratedConstructorAccessor53.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:787)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:709)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:677)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:137)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:470)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:211)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1369)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:843)
+	... 58 common frames omitted
+25-09-02.19:28:42.237 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-02.19:28:42.239 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-02.19:28:42.241 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：Cannot invoke "cn.bugstack.ai.domain.agent.model.valobj.AiAgentClientFlowConfigVO.getStepPrompt()" because "aiAgentClientFlowConfigVO" is null
+java.lang.NullPointerException: Cannot invoke "cn.bugstack.ai.domain.agent.model.valobj.AiAgentClientFlowConfigVO.getStepPrompt()" because "aiAgentClientFlowConfigVO" is null
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:32)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:44)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-02.19:36:17.908 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-02.19:36:17.915 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-02.19:36:23.555 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 68284 (/Users/didi/IdeaProjects/ai-agent-station-study/ai-agent-station-study-app/target/classes started by didi in /Users/didi/IdeaProjects/ai-agent-station-study)
+25-09-02.19:36:23.556 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-02.19:36:24.122 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8099 (http)
+25-09-02.19:36:24.128 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8099"]
+25-09-02.19:36:24.129 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-02.19:36:24.129 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-02.19:36:24.152 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-02.19:36:24.152 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 583 ms
+25-09-02.19:36:24.496 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-02.19:36:24.498 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-02.19:36:24.498 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-02.19:36:24.581 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-02.19:36:24.694 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8099"]
+25-09-02.19:36:24.702 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8099 (http) with context path '/'
+25-09-02.19:36:24.707 [main            ] INFO  Application            - Started Application in 1.328 seconds (process running for 1.57)
+25-09-02.19:36:24.708 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104])
+25-09-02.19:36:24.708 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.710 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.710 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.710 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.710 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.711 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.711 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104, 4101, 4102, 4103, 4104]
+25-09-02.19:36:24.719 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-02.19:36:24.792 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3aa4625c
+25-09-02.19:36:24.793 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-02.19:36:24.880 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104","4101","4102","4103","4104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-02.19:36:24.880 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104","4101","4102","4103","4104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-02.19:36:24.881 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-02.19:36:24.881 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104","4101","4102","4103","4104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-02.19:36:25.318 [HttpClient-10-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-02.19:36:25.387 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-02.19:36:25.388 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-02.19:36:43.805 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=null]], Info: Implementation[name=mcp-server-elasticsearch, version=1.0.0] and Instructions null
+25-09-02.19:36:43.808 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=null]], serverInfo=Implementation[name=mcp-server-elasticsearch, version=1.0.0], instructions=null]
+25-09-02.19:36:43.809 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5007
+25-09-02.19:36:43.809 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104","4101","4102","4103","4104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-02.19:36:43.903 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2002
+25-09-02.19:36:43.903 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-02.19:36:43.906 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2003
+25-09-02.19:36:43.906 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104","4101","4102","4103","4104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-02.19:36:43.909 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-02.19:36:43.910 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104","4101","4102","4103","4104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-02.19:36:43.979 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-02.19:36:44.103 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-02.19:36:44.168 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-02.19:36:44.168 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-02.19:36:44.172 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_4101
+25-09-02.19:36:44.174 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_4102
+25-09-02.19:36:44.176 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_4103
+25-09-02.19:36:44.176 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_4104
+25-09-02.19:36:44.177 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成
+25-09-02.19:36:51.305 [http-nio-8099-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-02.19:36:51.305 [http-nio-8099-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-02.19:36:51.310 [http-nio-8099-exec-1] INFO  DispatcherServlet      - Completed initialization in 5 ms
+25-09-02.19:36:51.341 [http-nio-8099-exec-1] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"4","maxStep":5,"message":"通过ES查询被限流的用户，给出被限流用户列表。","sessionId":"session_1756813011268_9hkph2uig"}
+25-09-02.19:36:51.343 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-02.19:36:51.343 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 通过ES查询被限流的用户，给出被限流用户列表。
+25-09-02.19:36:51.343 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-02.19:36:51.343 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1756813011268_9hkph2uig
+25-09-02.19:36:51.349 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-02.19:36:51.350 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-02.19:38:15.936 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 已完成：
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 - list_indices() 调用成功并定位到候选日志索引 group-buy-market-log-2025.09.02。
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 - get_mappings() 成功，确认索引包含 message、user_id、ip_address、limit_reason、limit_type、@timestamp 等字段，满足限流日志抽取需求。
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 待完成：
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 - 构建并执行搜索查询以识别被限流的用户并生成用户列表（下一步）。
+25-09-02.19:38:15.938 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 - 解析 search 结果并聚合成最终清单（包含最近限流时间、次数、限流原因等）。
+25-09-02.19:38:15.959 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+25-09-02.19:38:15.959 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📊 - list_indices() 与 get_mappings() 调用成功，返回的数据质量良好，成功率 100%（两次工具调用均成功）。
+25-09-02.19:38:15.959 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📊 - 目前尚未调用 search，因此尚未评估搜索成功率与返回结果质量。
+25-09-02.19:38:15.960 [pool-2-thread-7 ] ERROR AbstractExecuteSupport - 发送SSE结果失败：ServletOutputStream failed to flush: java.io.IOException: Broken pipe
+org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.io.IOException: Broken pipe
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse.handleIOException(StandardServletAsyncWebRequest.java:346)
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:418)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:136)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$DefaultSseEmitterHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:310)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$DefaultSseEmitterHandler.send(ResponseBodyEmitterReturnValueHandler.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:193)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:177)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.AbstractExecuteSupport.sendSseResult(AbstractExecuteSupport.java:64)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.sendAnalysisSubResult(Step1AnalyzerNode.java:166)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.parseAnalysisResult(Step1AnalyzerNode.java:105)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:50)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:44)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:308)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:270)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:133)
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:415)
+	... 23 common frames omitted
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1380)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1274)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408)
+	at org.apache.coyote.Response.action(Response.java:208)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:304)
+	... 26 common frames omitted
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 需要调用的工具列表（严格顺序）：
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 1. functions.JavaSDKMCPClient_search（对 index: "group-buy-market-log-2025.09.02" 执行查询）
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 工具调用的正确格式（特别是 search 的 queryBody）：必须是完整 JSON 对象。建议使用下列 queryBody（示例）来检索限流相关日志并聚合 user_id：
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 示例 queryBody（JSON，注意所有字符串使用双引号）：
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 {
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "size": 0,
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "sort": [
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 {
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "@timestamp": {
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "order": "desc"
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 ],
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "query": {
+25-09-02.19:38:15.962 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "bool": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "should": [
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 { "match": { "message": "限流" } },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 { "match": { "message": "rate limit" } },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 { "match": { "message": "被封禁" } },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 { "match": { "message": "访问频率过高" } },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 { "match": { "limit_reason": "限流" } },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 { "match": { "limit_type": "rate limit" } }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 ],
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "minimum_should_match": 1,
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "filter": [
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "range": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "@timestamp": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "gte": "now-30d/d",
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "lte": "now"
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "terms": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "level.keyword": ["ERROR", "WARN"]
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 ]
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "aggs": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "by_user": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "terms": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "field": "user_id.keyword",
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "size": 1000
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "aggs": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "last_hit": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "top_hits": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "size": 1,
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "_source": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "includes": ["@timestamp", "user_id", "ip_address", "limit_type", "limit_reason", "request_count", "message"]
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "sort": [
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "@timestamp": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "order": "desc"
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 ]
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "limit_count": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "value_count": {
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "field": "message"
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.963 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "by_ip_fallback": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "terms": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "field": "ip_address.keyword",
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "size": 1000
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "aggs": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "last_hit": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "top_hits": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "size": 1,
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "_source": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "includes": ["@timestamp", "ip_address", "limit_type", "limit_reason", "message"]
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "sort": [
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "@timestamp": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "order": "desc"
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 ]
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 },
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "limit_count": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "value_count": {
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 "field": "message"
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 }
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 说明与变体建议：
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - size: 0 采用聚合方式获取被限流的用户列表（更高效），通过 top_hits 获取每个用户最近一条限流记录。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 时间范围 filter（示例为过去 30 天）可根据需求调整（如 now-7d、now-90d 等）。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 若 user_id 存在大量值，可提高 terms 聚合的 size 或转为 composite aggregation 分页拉取。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 若日志中 user_id 可能缺失，使用 by_ip_fallback 聚合作为降级方案（基于 ip_address）。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 预期的结果类型：
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 聚合 buckets：每个 user_id（或者 ip_address）对应的桶，包含：
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 最近一次限流记录的 @timestamp、limit_type、limit_reason、ip_address、message 等。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - limit_count（该用户在查询时间范围内被匹配到的限流日志次数）。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 可以进一步导出为 CSV/JSON，生成被限流用户清单。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 数据处理方式：
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 1. 读取 aggs.by_user.buckets，提取 key (user_id)、limit_count、last_hit.hits.hits[0]._source 中的信息。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 2. 对无 user_id 的记录则读取 aggs.by_ip_fallback.buckets 作为补充。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 3. 去重与排序（例如按最近限流时间降序或按限流次数降序）。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 4. 输出字段建议：user_id / ip_address, recent_limit_time, limit_type, limit_reason, limit_count, sample_message, source_index。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 错误预防与校验：
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 严格保证传给 search 的 queryBody 为完整 JSON（不能为 null/undefined/{}）。
+25-09-02.19:38:15.964 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 在构造 terms 聚合时使用 .keyword 字段以保证聚合准确性（mapping 已包含 keyword）。
+25-09-02.19:38:15.965 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 若返回 bucket 数量达到聚合上限（size），应改为 composite 聚合以分页采集全部用户。
+25-09-02.19:38:15.965 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 - 若需要更精确的匹配，可把 should 的 match 换成 multi_match 或 match_phrase，或增加正则/regexp（谨慎使用性能代价较高的查询）。
+25-09-02.19:38:15.965 [pool-2-thread-7 ] ERROR AiAgentController      - AutoAgent执行异常：ResponseBodyEmitter has already completed
+java.lang.IllegalStateException: ResponseBodyEmitter has already completed
+	at org.springframework.util.Assert.state(Assert.java:101)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:189)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:177)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.AbstractExecuteSupport.sendSseResult(AbstractExecuteSupport.java:64)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.sendAnalysisSubResult(Step1AnalyzerNode.java:166)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.parseAnalysisResult(Step1AnalyzerNode.java:112)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:50)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.Step1AnalyzerNode.doApply(Step1AnalyzerNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:22)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:44)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.step.RootNode.doApply(RootNode.java:19)
+	at cn.bugstack.wrench.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:31)
+	at cn.bugstack.ai.domain.agent.service.execute.auto.AutoAgentExecuteStrategy.execute(AutoAgentExecuteStrategy.java:38)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-02.19:38:15.965 [pool-2-thread-7 ] ERROR AiAgentController      - 发送异常信息失败：ResponseBodyEmitter has already completed
+java.lang.IllegalStateException: ResponseBodyEmitter has already completed
+	at org.springframework.util.Assert.state(Assert.java:101)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:189)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:177)
+	at cn.bugstack.ai.trigger.http.AiAgentController.lambda$autoAgent$0(AiAgentController.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-09-02.19:45:53.017 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=6m28s91ms).
+25-09-02.19:47:44.180 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1m18s844ms).
+25-09-02.20:54:01.914 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h6m17s734ms).
+25-09-02.22:31:31.813 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h37m29s900ms).
+25-09-02.23:28:43.713 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=57m11s899ms).
+25-09-02.23:53:24.698 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=24m40s986ms).
